@@ -33,6 +33,6 @@ jobs:
 
       - uses: actions/setup-java@v4
         with:
-          distribution: 'oracle' # See 'Supported distributions' for available options
+          distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '21'
 
