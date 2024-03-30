@@ -16,9 +16,9 @@ runs:
       shell: bash
       run: cat sometest.txt
     - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
     - name: Dump job context
       env:
         JOB_CONTEXT: ${{ toJson(job) }}
