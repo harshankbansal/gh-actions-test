@@ -46,6 +46,16 @@ runs:
         MATRIX_CONTEXT: ${{ toJson(matrix) }}
       shell: bash
       run: echo "$MATRIX_CONTEXT"
+    - name: Dump env
+      env:
+        ALL_ENV: ${{ toJson(vars) }}
+      shell: bash
+      run: echo "$ALL_ENV"
+    - name: Dump secrets
+      env:
+        ALL_SEC: ${{ toJson(secrets) }}
+      shell: bash
+      run: echo "$ALL_SEC"
     # - name: send request
     #   shell: bash
     #   env:
