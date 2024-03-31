@@ -19,4 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: harshankbansal/gh-actions-test@main
+
+  test-reusable-actions:
+    name: Test reusable actions
+    uses: harshankbansal/shared-workflow/ci-wf.yaml@main
+    secrets: inherit
   
