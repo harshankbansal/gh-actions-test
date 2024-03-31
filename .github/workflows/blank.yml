@@ -22,6 +22,6 @@ jobs:
 
   test-reusable-actions:
     name: Test reusable actions
-    uses: harshankbansal/shared-workflow/github/workflows/subfolder/ci-wf.yaml@main
+    uses: harshankbansal/shared-workflow/.github/workflows/subfolder/ci-wf.yaml@main
     secrets: inherit
   
